@@ -29,13 +29,9 @@ jobs:
           registry-url: https://npm.pkg.github.com
           cache: npm
 
-      - name: Setup .npmrc at root
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
-        working-directory: .
-
       - name: Build Storybook
         run:
-          npm install --save-dev @storybook/cli
+          npm install
           npm run build-storybook
 
       - name: Deploy to GitHub Pages
