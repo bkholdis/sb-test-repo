@@ -35,7 +35,7 @@ jobs:
 
       - name: Build Storybook
         run:
-          npm install
+          npm install --save-dev @storybook/cli
           npm run build-storybook
 
       - name: Deploy to GitHub Pages
