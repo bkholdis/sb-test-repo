@@ -35,7 +35,7 @@ jobs:
 
       - name: Build Storybook
         run:
-          npm ci --include=dev
+          npm install
           npm run build-storybook
 
       - name: Deploy to GitHub Pages
