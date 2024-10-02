@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   deploy:
-    rruns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./
