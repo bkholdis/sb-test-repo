@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Remove old storybook static files
+        run: rm -rf storybook-static
+
       - name: Build Storybook
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider
