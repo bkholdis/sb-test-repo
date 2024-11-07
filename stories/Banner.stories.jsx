@@ -10,7 +10,7 @@ export default {
 export const Info = () => (
   <Banner variant="info">
     <p>
-      This is an example of an info banner to display important information.
+      EEEEEEEEEEE
     </p>
   </Banner>
 );
