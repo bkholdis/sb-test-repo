@@ -10,7 +10,7 @@ export default {
 export const Info = () => (
   <Banner variant="info">
     <p>
-      EEEEEEEEEEE
+      OOOOOOOOOOOO
     </p>
   </Banner>
 );
