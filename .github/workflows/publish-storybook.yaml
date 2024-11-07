@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - gh-pages
+      - other-branch
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -35,4 +36,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
-          destination_dir: ${{ github.ref_name }} 
+          destination_dir: ${{ github.ref_name }}
